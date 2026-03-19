@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO Italiano -->
+  <title>Luca Rizzuti – Workshop di Improvvisazione Teatrale per Aziende e Team</title>
+  <meta name="description" content="Luca Rizzuti progetta e facilita workshop esperienziali basati sull'improvvisazione teatrale per aziende, startup e PMI. Comunicazione, leadership e lavoro di squadra in Italia e Germania.">
+  <meta name="keywords" content="workshop improvvisazione teatrale aziende, formazione aziendale esperienziale, comunicazione efficace team, leadership workshop Italia, improv for business, formazione soft skills, workshop team building Germania, Luca Rizzuti">
+  <meta name="author" content="Luca Rizzuti">
+  <link rel="alternate" hreflang="en" href="https://lucarizzuti.com/">
+  <link rel="alternate" hreflang="it" href="https://lucarizzuti.com/it/">
+  <link rel="canonical" href="https://lucarizzuti.com/it/">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Luca Rizzuti – Workshop di Improvvisazione Teatrale per Aziende">
+  <meta property="og:description" content="Workshop esperienziali basati sull'improvvisazione teatrale per aziende e team. Comunicazione, leadership, collaborazione. Attivo in Italia e Germania.">
+  <meta property="og:url" content="https://lucarizzuti.com/it/">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://lucarizzuti.com/hero.jpg">
+  <meta property="og:locale" content="it_IT">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --ink: #1a1a18;
+      --paper: #f5f2ed;
+      --warm: #c8a96e;
+      --warm-light: #e8dcc8;
+      --muted: #7a7670;
+      --accent: #3d2b1f;
+      --section-gap: 7rem;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background-color: var(--paper);
+      color: var(--ink);
+      font-size: 17px;
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    /* NAV */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.4rem 4rem;
+      background: rgba(245, 242, 237, 0.92);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid rgba(200, 169, 110, 0.2);
+    }
+
+    .nav-logo {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.3rem;
+      font-weight: 400;
+      letter-spacing: 0.05em;
+      color: var(--ink);
+      text-decoration: none;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2.5rem;
+      list-style: none;
+    }
+
+    .nav-links a {
+      font-size: 0.82rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--muted);
+      text-decoration: none;
+      transition: color 0.25s;
+      font-weight: 500;
+    }
+
+    .nav-links a:hover { color: var(--ink); }
+
+    .nav-lang {
+      font-size: 0.78rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--warm);
+      text-decoration: none;
+      font-weight: 500;
+      border: 1px solid var(--warm);
+      padding: 0.3rem 0.7rem;
+      border-radius: 2px;
+      transition: all 0.25s;
+    }
+
+    .nav-lang:hover {
+      background: var(--warm);
+      color: white;
+    }
+
+    /* HERO */
+    .hero {
+      min-height: 100vh;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      padding-top: 5rem;
+    }
+
+    .hero-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 4rem 4rem 4rem 4rem;
+    }
+
+    .hero-eyebrow {
+      font-size: 0.78rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--warm);
+      font-weight: 500;
+      margin-bottom: 1.8rem;
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+    }
+
+    .hero-eyebrow::before {
+      content: '';
+      display: inline-block;
+      width: 2rem;
+      height: 1px;
+      background: var(--warm);
+    }
+
+    .hero h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2.8rem, 4.5vw, 4.2rem);
+      font-weight: 300;
+      line-height: 1.15;
+      letter-spacing: -0.01em;
+      color: var(--ink);
+      margin-bottom: 2rem;
+    }
+
+    .hero h1 em {
+      font-style: italic;
+      color: var(--accent);
+    }
+
+    .hero-sub {
+      font-size: 1.05rem;
+      color: var(--muted);
+      line-height: 1.75;
+      max-width: 38ch;
+      margin-bottom: 3rem;
+      font-weight: 300;
+    }
+
+    .hero-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.8rem;
+      background: var(--ink);
+      color: var(--paper);
+      text-decoration: none;
+      padding: 1rem 2rem;
+      font-size: 0.85rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      font-weight: 500;
+      transition: all 0.3s;
+      width: fit-content;
+    }
+
+    .hero-cta:hover {
+      background: var(--accent);
+      transform: translateX(4px);
+    }
+
+    .hero-cta::after {
+      content: '→';
+      transition: transform 0.3s;
+    }
+
+    .hero-cta:hover::after { transform: translateX(4px); }
+
+    .hero-image {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      display: block;
+      filter: sepia(8%) contrast(1.05);
+    }
+
+    .hero-image::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(245,242,237,0.15) 0%, transparent 60%);
+    }
+
+    /* DIVIDER */
+    .divider {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      padding: 0 4rem;
+      margin: var(--section-gap) 0 0;
+    }
+
+    .divider-line {
+      flex: 1;
+      height: 1px;
+      background: linear-gradient(to right, var(--warm-light), transparent);
+    }
+
+    .divider-label {
+      font-size: 0.72rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--warm);
+      font-weight: 500;
+    }
+
+    /* SECTIONS */
+    section {
+      padding: 5rem 4rem;
+    }
+
+    .section-header {
+      margin-bottom: 4rem;
+    }
+
+    .section-number {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 5rem;
+      font-weight: 300;
+      color: var(--warm-light);
+      line-height: 1;
+      margin-bottom: -0.5rem;
+    }
+
+    .section-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(1.8rem, 3vw, 2.8rem);
+      font-weight: 400;
+      color: var(--ink);
+      line-height: 1.2;
+    }
+
+    /* COSA FACCIO */
+    #cosa-faccio {
+      background: white;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0;
+      margin-top: 3rem;
+    }
+
+    .service-card {
+      padding: 3rem;
+      border: 1px solid var(--warm-light);
+      position: relative;
+      transition: background 0.3s;
+    }
+
+    .service-card:hover {
+      background: var(--paper);
+    }
+
+    .service-card + .service-card {
+      border-left: none;
+    }
+
+    .service-icon {
+      font-size: 1.8rem;
+      margin-bottom: 1.5rem;
+      display: block;
+    }
+
+    .service-card h3 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.5rem;
+      font-weight: 400;
+      margin-bottom: 1rem;
+      color: var(--accent);
+    }
+
+    .service-card p {
+      font-size: 0.95rem;
+      color: var(--muted);
+      line-height: 1.8;
+      margin-bottom: 1.5rem;
+      font-weight: 300;
+    }
+
+    .service-topics {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .service-topics li {
+      font-size: 0.85rem;
+      color: var(--ink);
+      display: flex;
+      align-items: baseline;
+      gap: 0.6rem;
+    }
+
+    .service-topics li::before {
+      content: '—';
+      color: var(--warm);
+      flex-shrink: 0;
+    }
+
+    /* IL MIO APPROCCIO */
+    #approccio {
+      background: var(--accent);
+      color: var(--paper);
+    }
+
+    #approccio .section-title { color: var(--warm-light); }
+    #approccio .section-number { color: rgba(200,169,110,0.2); }
+
+    .principles-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 3rem;
+      margin-top: 3rem;
+    }
+
+    .principle {
+      padding: 2.5rem;
+      border-left: 2px solid var(--warm);
+    }
+
+    .principle h3 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.3rem;
+      font-weight: 400;
+      color: var(--warm);
+      margin-bottom: 0.8rem;
+      font-style: italic;
+    }
+
+    .principle p {
+      font-size: 0.92rem;
+      line-height: 1.8;
+      color: rgba(245,242,237,0.75);
+      font-weight: 300;
+    }
+
+    .approccio-statement {
+      margin-top: 4rem;
+      padding: 3rem;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(200,169,110,0.3);
+    }
+
+    .approccio-statement p {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.5rem;
+      font-weight: 300;
+      font-style: italic;
+      line-height: 1.6;
+      color: var(--warm-light);
+      text-align: center;
+    }
+
+    /* CHI SONO */
+    #chi-sono {
+      display: grid;
+      grid-template-columns: 1fr 1.4fr;
+      gap: 0;
+      padding: 0;
+    }
+
+    .chi-sono-image {
+      position: relative;
+      min-height: 600px;
+    }
+
+    .chi-sono-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top center;
+      display: block;
+      filter: sepia(8%) contrast(1.05);
+    }
+
+    .chi-sono-content {
+      padding: 5rem 4rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .chi-sono-content p {
+      font-size: 1rem;
+      color: var(--muted);
+      line-height: 1.85;
+      margin-bottom: 1.5rem;
+      font-weight: 300;
+    }
+
+    .chi-sono-content p strong {
+      color: var(--ink);
+      font-weight: 500;
+    }
+
+    .chi-sono-content p em {
+      font-style: italic;
+      color: var(--accent);
+    }
+
+    .stats-row {
+      display: flex;
+      gap: 3rem;
+      margin-top: 2.5rem;
+      padding-top: 2.5rem;
+      border-top: 1px solid var(--warm-light);
+    }
+
+    .stat strong {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2.5rem;
+      font-weight: 300;
+      color: var(--accent);
+      display: block;
+      line-height: 1;
+    }
+
+    .stat span {
+      font-size: 0.78rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--muted);
+      font-weight: 500;
+    }
+
+    /* CONTATTI */
+    #contatti {
+      background: var(--paper);
+      text-align: center;
+      padding: 7rem 4rem;
+    }
+
+    #contatti .section-title {
+      margin-bottom: 1.5rem;
+    }
+
+    .contact-sub {
+      font-size: 1.05rem;
+      color: var(--muted);
+      max-width: 50ch;
+      margin: 0 auto 3rem;
+      font-weight: 300;
+      line-height: 1.8;
+    }
+
+    .contact-buttons {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      background: var(--ink);
+      color: var(--paper);
+      text-decoration: none;
+      padding: 1rem 2.2rem;
+      font-size: 0.85rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      font-weight: 500;
+      transition: all 0.3s;
+    }
+
+    .btn-primary:hover {
+      background: var(--accent);
+    }
+
+    .btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      border: 1px solid var(--ink);
+      color: var(--ink);
+      text-decoration: none;
+      padding: 1rem 2.2rem;
+      font-size: 0.85rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      font-weight: 500;
+      transition: all 0.3s;
+    }
+
+    .btn-secondary:hover {
+      background: var(--ink);
+      color: var(--paper);
+    }
+
+    /* FOOTER */
+    footer {
+      background: var(--ink);
+      color: rgba(245,242,237,0.5);
+      padding: 2rem 4rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.8rem;
+      letter-spacing: 0.05em;
+    }
+
+    footer a {
+      color: var(--warm);
+      text-decoration: none;
+    }
+
+    /* HAMBURGER MOBILE */
+    .nav-toggle {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      background: none;
+      border: none;
+      padding: 0;
+    }
+
+    .nav-toggle span {
+      display: block;
+      width: 24px;
+      height: 1px;
+      background: var(--ink);
+      transition: all 0.3s;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 900px) {
+      nav { padding: 1.2rem 1.5rem; }
+
+      .nav-links { display: none; }
+      .nav-links.open {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 60px; left: 0; right: 0;
+        background: var(--paper);
+        padding: 2rem;
+        gap: 1.5rem;
+        border-bottom: 1px solid var(--warm-light);
+      }
+
+      .nav-toggle { display: flex; }
+
+      .hero {
+        grid-template-columns: 1fr;
+        min-height: auto;
+      }
+
+      .hero-image {
+        height: 50vw;
+        min-height: 260px;
+        order: -1;
+      }
+
+      .hero-content { padding: 2.5rem 1.5rem; }
+
+      section { padding: 4rem 1.5rem; }
+
+      .services-grid,
+      .principles-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .service-card + .service-card { border-left: 1px solid var(--warm-light); border-top: none; }
+
+      #chi-sono {
+        grid-template-columns: 1fr;
+      }
+
+      .chi-sono-image { min-height: 300px; }
+      .chi-sono-content { padding: 3rem 1.5rem; }
+
+      .stats-row { gap: 2rem; }
+
+      footer {
+        flex-direction: column;
+        gap: 0.8rem;
+        text-align: center;
+        padding: 2rem 1.5rem;
+      }
+
+      #contatti { padding: 5rem 1.5rem; }
+      .divider { padding: 0 1.5rem; }
+    }
+
+    /* ANIMATIONS */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(24px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .hero-eyebrow { animation: fadeUp 0.6s ease both; }
+    .hero h1      { animation: fadeUp 0.6s 0.15s ease both; }
+    .hero-sub     { animation: fadeUp 0.6s 0.3s ease both; }
+    .hero-cta     { animation: fadeUp 0.6s 0.45s ease both; }
+  </style>
+</head>
+<body>
+
+  <!-- NAVIGAZIONE -->
+  <nav>
+    <a href="#" class="nav-logo">Luca Rizzuti</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#cosa-faccio">Cosa faccio</a></li>
+      <li><a href="#approccio">Il mio approccio</a></li>
+      <li><a href="#chi-sono">Chi sono</a></li>
+      <li><a href="#contatti">Contatti</a></li>
+    </ul>
+    <a href="https://lucarizzuti.com" class="nav-lang">EN</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero-content">
+      <span class="hero-eyebrow">Formazione esperienziale · Italia &amp; Germania</span>
+      <h1>Quello che succede tra le persone <em>cambia tutto</em></h1>
+      <p class="hero-sub">
+        Progetto e conduco workshop per aziende usando l'improvvisazione teatrale come strumento di formazione. Non per imparare a recitare — ma per allenare la qualità del lavoro insieme.
+      </p>
+      <a href="#contatti" class="hero-cta">Parliamone</a>
+    </div>
+    <div class="hero-image">
+      <img src="https://lucarizzuti.com/hero.jpg" alt="Workshop di improvvisazione teatrale aziendale con Luca Rizzuti">
+    </div>
+  </div>
+
+  <!-- COSA FACCIO -->
+  <div class="divider">
+    <div class="divider-line"></div>
+    <span class="divider-label">Servizi</span>
+    <div class="divider-line" style="background: linear-gradient(to left, var(--warm-light), transparent);"></div>
+  </div>
+
+  <section id="cosa-faccio">
+    <div class="section-header">
+      <div class="section-number">01</div>
+      <h2 class="section-title">Cosa faccio</h2>
+    </div>
+
+    <div class="services-grid">
+      <div class="service-card">
+        <span class="service-icon">◈</span>
+        <h3>Workshop per aziende e team</h3>
+        <p>
+          Interventi formativi progettati su misura per contesti aziendali — grandi imprese, PMI, startup — dove la qualità delle relazioni interne è un fattore competitivo reale.
+        </p>
+        <ul class="service-topics">
+          <li>Comunicazione efficace e ascolto attivo</li>
+          <li>Collaborazione e dinamiche di team</li>
+          <li>Leadership e gestione dello status</li>
+          <li>Navigare l'incertezza e il cambiamento</li>
+          <li>Presenza e chiarezza nelle interazioni</li>
+        </ul>
+      </div>
+
+      <div class="service-card">
+        <span class="service-icon">◇</span>
+        <h3>Percorsi per gruppi e benessere</h3>
+        <p>
+          Processi esperienziali per gruppi che vogliono lavorare sulla qualità delle relazioni, sulla fiducia reciproca e sulla consapevolezza — al di fuori del contesto strettamente lavorativo.
+        </p>
+        <ul class="service-topics">
+          <li>Qualità delle relazioni interpersonali</li>
+          <li>Fiducia e consapevolezza</li>
+          <li>Presenza e ascolto corporeo</li>
+          <li>Relazione con l'altro e con l'imprevisto</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- APPROCCIO -->
+  <section id="approccio">
+    <div class="section-header">
+      <div class="section-number">02</div>
+      <h2 class="section-title">Il mio approccio</h2>
+    </div>
+
+    <div class="principles-grid">
+      <div class="principle">
+        <h3>L'esperienza prima della teoria</h3>
+        <p>L'apprendimento avviene facendo, osservando e riflettendo insieme. Non si tratta di ascoltare concetti — ma di attraversarli in prima persona.</p>
+      </div>
+      <div class="principle">
+        <h3>Struttura e sicurezza</h3>
+        <p>Il gioco funziona solo dentro confini chiari e condivisi. Ogni intervento è progettato perché ogni partecipante si senta libero di sperimentare senza rischi.</p>
+      </div>
+      <div class="principle">
+        <h3>Ascolto e relazione</h3>
+        <p>L'attenzione è sempre diretta a ciò che accade tra le persone. Non al singolo individuo — ma allo spazio di relazione che si crea nel gruppo.</p>
+      </div>
+      <div class="principle">
+        <h3>Nessuna performance richiesta</h3>
+        <p>Non occorre "saper recitare", avere esperienza teatrale o sentirsi portati. Il lavoro è accessibile e rispetta il ritmo di ognuno.</p>
+      </div>
+    </div>
+
+    <div class="approccio-statement">
+      <p>L'improvvisazione teatrale non è usata come intrattenimento.<br>È uno strumento di indagine e trasformazione.</p>
+    </div>
+  </section>
+
+  <!-- CHI SONO -->
+  <section id="chi-sono" style="padding:0; background: white;">
+    <div class="chi-sono-image">
+      <img src="https://lucarizzuti.com/profilo.jpg" alt="Luca Rizzuti - formatore e facilitatore">
+    </div>
+    <div class="chi-sono-content">
+      <div class="section-header" style="margin-bottom: 2rem;">
+        <div class="section-number">03</div>
+        <h2 class="section-title">Chi sono</h2>
+      </div>
+      <p>
+        Sono un formatore e insegnante di improvvisazione teatrale. Lavoro con gruppi molto diversi tra loro — team aziendali, artisti, studenti, persone senza nessun background teatrale.
+      </p>
+      <p>
+        Ho alle spalle <strong>più di trent'anni di esperienza nello sviluppo software</strong> con metodologie agili, il che mi dà un punto di vista raro: conosco dall'interno le dinamiche dei team tecnici, le pressioni del contesto aziendale, la cultura delle startup.
+      </p>
+      <p>
+        Non porto una metodologia preconfezionata. <em>Porto la capacità di leggere il gruppo e creare le condizioni perché funzioni meglio.</em>
+      </p>
+      <p>
+        Collaboro con una rete internazionale di professionisti, coach, artisti e organizzazioni formative — il che mi permette di progettare interventi su misura per contesti molto diversi.
+      </p>
+      <div class="stats-row">
+        <div class="stat">
+          <strong>30+</strong>
+          <span>anni nel settore tech</span>
+        </div>
+        <div class="stat">
+          <strong>IT · DE</strong>
+          <span>Italia e Germania</span>
+        </div>
+        <div class="stat">
+          <strong>∞</strong>
+          <span>background richiesto</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATTI -->
+  <section id="contatti">
+    <div class="section-number" style="text-align:center;">04</div>
+    <h2 class="section-title" style="text-align:center; margin-bottom: 1.5rem;">Parliamo</h2>
+    <p class="contact-sub">
+      Se stai pensando a un intervento formativo per il tuo team o vuoi capire se questo tipo di lavoro è adatto al tuo contesto, scrivimi. Nessun impegno — una conversazione per iniziare.
+    </p>
+    <div class="contact-buttons">
+      <a href="mailto:luca.rizzuti@gmail.com" class="btn-primary">Scrivimi una mail</a>
+      <a href="https://lucarizzuti.com" class="btn-secondary">Versione in inglese →</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <span>© 2026 Luca Rizzuti · Tutti i diritti riservati</span>
+    <span>
+      <a href="mailto:luca.rizzuti@gmail.com">luca.rizzuti@gmail.com</a>
+    </span>
+  </footer>
+
+  <script>
+    // Mobile nav toggle
+    const toggle = document.getElementById('navToggle');
+    const links = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => links.classList.toggle('open'));
+
+    // Close nav on link click
+    links.querySelectorAll('a').forEach(a => {
+      a.addEventListener('click', () => links.classList.remove('open'));
+    });
+
+    // Smooth reveal on scroll
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.style.opacity = '1';
+          e.target.style.transform = 'translateY(0)';
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.service-card, .principle, .stat').forEach(el => {
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(20px)';
+      el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+      observer.observe(el);
+    });
+  </script>
+
+</body>
+</html>
