@@ -1,36 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-1M1D03H899"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-1M1D03H899');
-  </script>
-
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- SEO English -->
-  <title>Luca Rizzuti – Theatrical Improvisation Workshops for Teams & Organizations</title>
-  <meta name="description" content="Luca Rizzuti designs and facilitates workshops using theatrical improvisation as a tool for communication, leadership, and team development. Working with companies and organizations across Italy and Germany.">
-  <meta name="keywords" content="theatrical improvisation workshops, applied improvisation corporate training, team communication workshop, leadership training improvisation, improv for business, workshop Italy Germany, team development Berlin, Luca Rizzuti">
+  <!-- SEO Deutsch -->
+  <title>Luca Rizzuti – Theaterimprovisation Workshops für Unternehmen und Teams</title>
+  <meta name="description" content="Luca Rizzuti entwickelt und leitet erfahrungsbasierte Workshops mit Theaterimprovisation für Unternehmen, Startups und KMU. Kommunikation, Führung und Teamarbeit – in Italien und Deutschland.">
+  <meta name="keywords" content="Theaterimprovisation Workshop Unternehmen, Improvisationstheater Training Berlin, Teamkommunikation Workshop, Führungskräftetraining Improvisation, erfahrungsbasiertes Lernen Deutschland, Soft Skills Training Berlin, applied improvisation corporate, Luca Rizzuti">
   <meta name="author" content="Luca Rizzuti">
-  <link rel="canonical" href="https://lucarizzuti.com/">
+  <link rel="canonical" href="https://lucarizzuti.com/de/">
   <link rel="alternate" hreflang="en" href="https://lucarizzuti.com/">
   <link rel="alternate" hreflang="it" href="https://lucarizzuti.com/it/">
   <link rel="alternate" hreflang="de" href="https://lucarizzuti.com/de/">
   <link rel="alternate" hreflang="x-default" href="https://lucarizzuti.com/">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Luca Rizzuti – Theatrical Improvisation Workshops for Teams & Organizations">
-  <meta property="og:description" content="Workshops using theatrical improvisation as a tool for communication, leadership, and team development. Working with companies across Italy and Germany.">
-  <meta property="og:url" content="https://lucarizzuti.com/">
+  <meta property="og:title" content="Luca Rizzuti – Theaterimprovisation Workshops für Unternehmen">
+  <meta property="og:description" content="Erfahrungsbasierte Workshops mit Theaterimprovisation für Unternehmen und Teams. Kommunikation, Führung, Zusammenarbeit. Tätig in Deutschland und Italien.">
+  <meta property="og:url" content="https://lucarizzuti.com/de/">
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://lucarizzuti.com/hero.jpg">
-  <meta property="og:locale" content="en_GB">
+  <meta property="og:locale" content="de_DE">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -101,28 +92,22 @@
 
     .nav-links a:hover { color: var(--ink); }
 
-    .nav-lang-group {
-      display: flex;
-      gap: 0.5rem;
-      align-items: center;
-    }
-
     .nav-lang {
       font-size: 0.78rem;
       letter-spacing: 0.12em;
       text-transform: uppercase;
-      color: var(--muted);
+      color: var(--warm);
       text-decoration: none;
       font-weight: 500;
-      border: 1px solid var(--warm-light);
+      border: 1px solid var(--warm);
       padding: 0.3rem 0.7rem;
       border-radius: 2px;
       transition: all 0.25s;
     }
 
     .nav-lang:hover {
-      border-color: var(--warm);
-      color: var(--warm);
+      background: var(--warm);
+      color: white;
     }
 
     /* HERO */
@@ -162,7 +147,7 @@
 
     .hero h1 {
       font-family: 'Cormorant Garamond', serif;
-      font-size: clamp(2.8rem, 4.5vw, 4.2rem);
+      font-size: clamp(2.6rem, 4.2vw, 3.9rem);
       font-weight: 300;
       line-height: 1.15;
       letter-spacing: -0.01em;
@@ -282,8 +267,8 @@
       line-height: 1.2;
     }
 
-    /* WHAT I DO */
-    #what-i-do {
+    /* LEISTUNGEN */
+    #leistungen {
       background: white;
     }
 
@@ -352,14 +337,14 @@
       flex-shrink: 0;
     }
 
-    /* APPROACH */
-    #approach {
+    /* ANSATZ */
+    #ansatz {
       background: var(--accent);
       color: var(--paper);
     }
 
-    #approach .section-title { color: var(--warm-light); }
-    #approach .section-number { color: rgba(200,169,110,0.2); }
+    #ansatz .section-title { color: var(--warm-light); }
+    #ansatz .section-number { color: rgba(200,169,110,0.2); }
 
     .principles-grid {
       display: grid;
@@ -389,14 +374,14 @@
       font-weight: 300;
     }
 
-    .approach-statement {
+    .ansatz-statement {
       margin-top: 4rem;
       padding: 3rem;
       background: rgba(255,255,255,0.05);
       border: 1px solid rgba(200,169,110,0.3);
     }
 
-    .approach-statement p {
+    .ansatz-statement p {
       font-family: 'Cormorant Garamond', serif;
       font-size: 1.5rem;
       font-weight: 300;
@@ -406,20 +391,20 @@
       text-align: center;
     }
 
-    /* ABOUT */
-    #about {
+    /* ÜBER MICH */
+    #ueber-mich {
       display: grid;
       grid-template-columns: 1fr 1.4fr;
       gap: 0;
       padding: 0;
     }
 
-    .about-image {
+    .ueber-image {
       position: relative;
       min-height: 600px;
     }
 
-    .about-image img {
+    .ueber-image img {
       width: 100%;
       height: 100%;
       object-fit: cover;
@@ -428,14 +413,14 @@
       filter: sepia(8%) contrast(1.05);
     }
 
-    .about-content {
+    .ueber-content {
       padding: 5rem 4rem;
       display: flex;
       flex-direction: column;
       justify-content: center;
     }
 
-    .about-content p {
+    .ueber-content p {
       font-size: 1rem;
       color: var(--muted);
       line-height: 1.85;
@@ -443,12 +428,12 @@
       font-weight: 300;
     }
 
-    .about-content p strong {
+    .ueber-content p strong {
       color: var(--ink);
       font-weight: 500;
     }
 
-    .about-content p em {
+    .ueber-content p em {
       font-style: italic;
       color: var(--accent);
     }
@@ -478,8 +463,8 @@
       font-weight: 500;
     }
 
-    /* CONTACT */
-    #contact {
+    /* KONTAKT */
+    #kontakt {
       background: var(--paper);
       text-align: center;
       padding: 7rem 4rem;
@@ -516,7 +501,9 @@
       transition: all 0.3s;
     }
 
-    .btn-primary:hover { background: var(--accent); }
+    .btn-primary:hover {
+      background: var(--accent);
+    }
 
     .btn-secondary {
       display: inline-flex;
@@ -550,7 +537,10 @@
       letter-spacing: 0.05em;
     }
 
-    footer a { color: var(--warm); text-decoration: none; }
+    footer a {
+      color: var(--warm);
+      text-decoration: none;
+    }
 
     /* HAMBURGER MOBILE */
     .nav-toggle {
@@ -589,24 +579,45 @@
 
       .nav-toggle { display: flex; }
 
-      .hero { grid-template-columns: 1fr; min-height: auto; }
-      .hero-image { height: 50vw; min-height: 260px; order: -1; }
+      .hero {
+        grid-template-columns: 1fr;
+        min-height: auto;
+      }
+
+      .hero-image {
+        height: 50vw;
+        min-height: 260px;
+        order: -1;
+      }
+
       .hero-content { padding: 2.5rem 1.5rem; }
 
       section { padding: 4rem 1.5rem; }
 
-      .services-grid, .principles-grid { grid-template-columns: 1fr; }
+      .services-grid,
+      .principles-grid {
+        grid-template-columns: 1fr;
+      }
+
       .service-card + .service-card { border-left: 1px solid var(--warm-light); border-top: none; }
 
-      #about { grid-template-columns: 1fr; }
-      .about-image { min-height: 300px; }
-      .about-content { padding: 3rem 1.5rem; }
+      #ueber-mich {
+        grid-template-columns: 1fr;
+      }
+
+      .ueber-image { min-height: 300px; }
+      .ueber-content { padding: 3rem 1.5rem; }
 
       .stats-row { gap: 2rem; }
 
-      footer { flex-direction: column; gap: 0.8rem; text-align: center; padding: 2rem 1.5rem; }
+      footer {
+        flex-direction: column;
+        gap: 0.8rem;
+        text-align: center;
+        padding: 2rem 1.5rem;
+      }
 
-      #contact { padding: 5rem 1.5rem; }
+      #kontakt { padding: 5rem 1.5rem; }
       .divider { padding: 0 1.5rem; }
     }
 
@@ -628,16 +639,18 @@
   <nav>
     <a href="#" class="nav-logo">Luca Rizzuti</a>
     <ul class="nav-links" id="navLinks">
-      <li><a href="#what-i-do">What I do</a></li>
-      <li><a href="#approach">My approach</a></li>
-      <li><a href="#about">About me</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li><a href="#leistungen">Leistungen</a></li>
+      <li><a href="#ansatz">Mein Ansatz</a></li>
+      <li><a href="#ueber-mich">Über mich</a></li>
+      <li><a href="#kontakt">Kontakt</a></li>
     </ul>
-    <div class="nav-lang-group">
-      <a href="https://lucarizzuti.com/it/" class="nav-lang">IT</a>
-      <a href="https://lucarizzuti.com/de/" class="nav-lang">DE</a>
-    </div>
-    <button class="nav-toggle" id="navToggle" aria-label="Menu">
+
+<div class="nav-lang-group" style="display:flex; gap:0.5rem; align-items:center;">
+  <a href="https://lucarizzuti.com" class="nav-lang">EN</a>
+  <a href="https://lucarizzuti.com/it/" class="nav-lang">IT</a>
+</div>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Menü">
       <span></span><span></span><span></span>
     </button>
   </nav>
@@ -645,151 +658,153 @@
   <!-- HERO -->
   <div class="hero">
     <div class="hero-content">
-      <span class="hero-eyebrow">Experiential training · Italy &amp; Germany</span>
-      <h1>What happens between people <em>changes everything</em></h1>
+      <span class="hero-eyebrow">Erfahrungsbasiertes Training · Deutschland &amp; Italien</span>
+      <h1>Was zwischen Menschen entsteht, <em>verändert alles</em></h1>
       <p class="hero-sub">
-        I design and facilitate workshops for organisations using theatrical improvisation as a training tool. Not to learn acting — but to develop the quality of how people work together.
+        Ich entwickle und leite Workshops für Unternehmen — mit Theaterimprovisation als Werkzeug. Nicht um schauspielern zu lernen, sondern um die Qualität der Zusammenarbeit grundlegend zu verbessern.
       </p>
-      <a href="#contact" class="hero-cta">Let's talk</a>
+      <a href="#kontakt" class="hero-cta">Gespräch vereinbaren</a>
     </div>
     <div class="hero-image">
-      <img src="https://lucarizzuti.com/hero.jpg" alt="Theatrical improvisation workshop for organisations with Luca Rizzuti">
+      <img src="https://lucarizzuti.com/hero.jpg" alt="Theaterimprovisation Workshop für Unternehmen mit Luca Rizzuti">
     </div>
   </div>
 
-  <!-- WHAT I DO -->
+  <!-- LEISTUNGEN -->
   <div class="divider">
     <div class="divider-line"></div>
-    <span class="divider-label">Services</span>
+    <span class="divider-label">Leistungen</span>
     <div class="divider-line" style="background: linear-gradient(to left, var(--warm-light), transparent);"></div>
   </div>
 
-  <section id="what-i-do">
+  <section id="leistungen">
     <div class="section-header">
       <div class="section-number">01</div>
-      <h2 class="section-title">What I do</h2>
+      <h2 class="section-title">Was ich anbiete</h2>
     </div>
 
     <div class="services-grid">
       <div class="service-card">
         <span class="service-icon">◈</span>
-        <h3>Workshops for companies and teams</h3>
+        <h3>Workshops für Unternehmen und Teams</h3>
         <p>
-          Tailored training interventions for corporate environments — large organisations, SMEs, startups — where the quality of internal relationships is a genuine competitive factor.
+          Maßgeschneiderte Trainingsformate für Unternehmen — Konzerne, KMU, Startups — in denen die Qualität der internen Zusammenarbeit ein echter Wettbewerbsvorteil ist.
         </p>
         <ul class="service-topics">
-          <li>Effective communication and active listening</li>
-          <li>Collaboration and team dynamics</li>
-          <li>Leadership and status dynamics</li>
-          <li>Navigating uncertainty and change</li>
-          <li>Presence and clarity in interactions</li>
+          <li>Effektive Kommunikation und aktives Zuhören</li>
+          <li>Zusammenarbeit und Teamdynamik</li>
+          <li>Führung und Status-Dynamiken</li>
+          <li>Umgang mit Unsicherheit und Wandel</li>
+          <li>Präsenz und Klarheit in Interaktionen</li>
         </ul>
       </div>
 
       <div class="service-card">
         <span class="service-icon">◇</span>
-        <h3>Workshops for groups and wellbeing</h3>
+        <h3>Workshops für Gruppen und Wohlbefinden</h3>
         <p>
-          Experiential processes for groups interested in working on the quality of their relationships, mutual trust, and personal awareness — outside of a strictly professional context.
+          Erfahrungsbasierte Prozesse für Gruppen, die an der Qualität ihrer Beziehungen, am gegenseitigen Vertrauen und an persönlicher Bewusstheit arbeiten möchten.
         </p>
         <ul class="service-topics">
-          <li>Quality of interpersonal relationships</li>
-          <li>Trust and self-awareness</li>
-          <li>Presence and body listening</li>
-          <li>Relating to others and the unexpected</li>
+          <li>Qualität zwischenmenschlicher Beziehungen</li>
+          <li>Vertrauen und Selbstwahrnehmung</li>
+          <li>Präsenz und körperliches Zuhören</li>
+          <li>Begegnung mit dem Anderen und dem Unerwarteten</li>
         </ul>
       </div>
     </div>
   </section>
 
-  <!-- APPROACH -->
-  <section id="approach">
+  <!-- ANSATZ -->
+  <section id="ansatz">
     <div class="section-header">
       <div class="section-number">02</div>
-      <h2 class="section-title">My approach</h2>
+      <h2 class="section-title">Mein Ansatz</h2>
     </div>
 
     <div class="principles-grid">
       <div class="principle">
-        <h3>Experience before theory</h3>
-        <p>Learning happens through doing, observing, and reflecting together. Not by absorbing concepts — but by moving through them in real time.</p>
+        <h3>Erfahrung vor Theorie</h3>
+        <p>Lernen geschieht durch Tun, Beobachten und gemeinsames Reflektieren. Nicht durch das Aufnehmen von Konzepten — sondern durch das direkte Durchleben.</p>
       </div>
       <div class="principle">
-        <h3>Structure and safety</h3>
-        <p>Play only works within clear, shared boundaries. Every intervention is designed so that participants feel free to experiment — without risk.</p>
+        <h3>Struktur und Sicherheit</h3>
+        <p>Spiel funktioniert nur innerhalb klarer, gemeinsam getragener Grenzen. Jede Intervention ist so gestaltet, dass Teilnehmende frei experimentieren können — ohne Risiko.</p>
       </div>
       <div class="principle">
-        <h3>Listening and relationship</h3>
-        <p>Attention is always directed toward what happens between people. Not the individual — but the relational space that emerges within the group.</p>
+        <h3>Zuhören und Beziehung</h3>
+        <p>Die Aufmerksamkeit gilt immer dem, was zwischen den Menschen geschieht. Nicht dem Einzelnen — sondern dem Beziehungsraum, der in der Gruppe entsteht.</p>
       </div>
       <div class="principle">
-        <h3>No performance required</h3>
-        <p>There is no need to know how to act, have any theatrical background, or feel naturally inclined. The work is accessible and respects each person's pace.</p>
+        <h3>Keine Bühnenreife erforderlich</h3>
+        <p>Es braucht keine Schauspielkenntnisse, keine Bühnenerfahrung, kein besonderes Talent. Die Arbeit ist zugänglich und respektiert das Tempo jedes Einzelnen.</p>
       </div>
     </div>
 
-    <div class="approach-statement">
-      <p>Improvisation is not used here as entertainment.<br>It is a tool for inquiry and transformation.</p>
+    <div class="ansatz-statement">
+      <p>Theaterimprovisation wird hier nicht als Unterhaltung eingesetzt.<br>Sie ist ein Werkzeug zur Untersuchung und Veränderung.</p>
     </div>
   </section>
 
-  <!-- ABOUT -->
-  <section id="about" style="padding:0; background: white;">
-    <div class="about-image">
-      <img src="https://lucarizzuti.com/profilo.jpg" alt="Luca Rizzuti – trainer and facilitator">
+  <!-- ÜBER MICH -->
+  <section id="ueber-mich" style="padding:0; background: white;">
+    <div class="ueber-image">
+      <img src="https://lucarizzuti.com/profilo.jpg" alt="Luca Rizzuti – Trainer und Facilitator">
     </div>
-    <div class="about-content">
+    <div class="ueber-content">
       <div class="section-header" style="margin-bottom: 2rem;">
         <div class="section-number">03</div>
-        <h2 class="section-title">About me</h2>
+        <h2 class="section-title">Über mich</h2>
       </div>
       <p>
-        I am a trainer and teacher of theatrical improvisation. I work with very different groups — corporate teams, artists, students, people with no theatrical background whatsoever.
+        Ich bin Trainer und Lehrer für Theaterimprovisation. Ich arbeite mit sehr unterschiedlichen Gruppen — Unternehmensteams, Künstler:innen, Studierende, Menschen ganz ohne theatralen Hintergrund.
       </p>
       <p>
-        I bring <strong>over thirty years of experience in software development</strong> using agile methodologies — which gives me a rare vantage point: I know the dynamics of technical teams from the inside, the pressures of corporate life, the culture of startups.
+        Ich bringe <strong>mehr als dreißig Jahre Erfahrung in der Softwareentwicklung</strong> mit agilen Methoden mit — das gibt mir eine seltene Perspektive: Ich kenne die Dynamiken technischer Teams von innen, den Druck des unternehmerischen Alltags, die Kultur von Startups.
       </p>
       <p>
-        I don't bring a ready-made methodology. <em>I bring the ability to read a group and create the conditions for it to function better.</em>
+        Ich bringe keine vorgefertigte Methodik. <em>Ich bringe die Fähigkeit, eine Gruppe zu lesen und die Bedingungen zu schaffen, unter denen sie besser funktioniert.</em>
       </p>
       <p>
-        I collaborate with an international network of trainers, coaches, artists, and learning organisations — which allows me to design interventions that are precisely adapted to very different contexts.
+        Ich arbeite mit einem internationalen Netzwerk aus Trainer:innen, Coaches, Künstler:innen und Bildungsorganisationen zusammen — was mir erlaubt, Interventionen präzise auf sehr unterschiedliche Kontexte zuzuschneiden.
       </p>
       <div class="stats-row">
         <div class="stat">
           <strong>30+</strong>
-          <span>years in tech</span>
+          <span>Jahre in der Tech-Branche</span>
         </div>
         <div class="stat">
-          <strong>IT · DE</strong>
-          <span>Italy and Germany</span>
+          <strong>DE · IT</strong>
+          <span>Deutschland und Italien</span>
         </div>
         <div class="stat">
           <strong>∞</strong>
-          <span>background needed</span>
+          <span>Vorkenntnisse nötig</span>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- CONTACT -->
-  <section id="contact">
+  <!-- KONTAKT -->
+  <section id="kontakt">
     <div class="section-number" style="text-align:center;">04</div>
-    <h2 class="section-title" style="text-align:center; margin-bottom: 1.5rem;">Get in touch</h2>
+    <h2 class="section-title" style="text-align:center; margin-bottom: 1.5rem;">Kontakt aufnehmen</h2>
     <p class="contact-sub">
-      If you are thinking about a training intervention for your team, or simply want to understand whether this kind of work suits your context — write to me. No commitment, no pressure. A conversation to start.
+      Wenn Sie über ein Training für Ihr Team nachdenken oder einfach verstehen möchten, ob diese Art von Arbeit zu Ihrem Kontext passt — schreiben Sie mir. Kein Aufwand, kein Druck. Ein Gespräch, um anzufangen.
     </p>
     <div class="contact-buttons">
-      <a href="mailto:luca.rizzuti@gmail.com" class="btn-primary">Send me an email</a>
+      <a href="mailto:luca.rizzuti@gmail.com" class="btn-primary">E-Mail schreiben</a>
+      <a href="https://lucarizzuti.com" class="btn-secondary">English version →</a>
       <a href="https://lucarizzuti.com/it/" class="btn-secondary">Versione italiana →</a>
-      <a href="https://lucarizzuti.com/de/" class="btn-secondary">Deutsche Version →</a>
     </div>
   </section>
 
   <!-- FOOTER -->
   <footer>
-    <span>© 2026 Luca Rizzuti · All rights reserved</span>
-    <span><a href="mailto:luca.rizzuti@gmail.com">luca.rizzuti@gmail.com</a></span>
+    <span>© 2026 Luca Rizzuti · Alle Rechte vorbehalten</span>
+    <span>
+      <a href="mailto:luca.rizzuti@gmail.com">luca.rizzuti@gmail.com</a>
+    </span>
   </footer>
 
   <script>
